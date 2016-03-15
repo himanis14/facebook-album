@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smooth Sidebar Navigation Demo</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/side-bar-menu.css">
+</head>
+<body>
+<div id="side-social-media">
+	<button class="btn-nav">
+		<i class="fa fa-share-alt"></i>
+	</button>
+	<nav class="side-nav-container hidden hideNav">
+		<ul class="side-nav-list">
+			<button class="btn-nav">
+				<i class="fa fa-share-alt"></i>
+			</button>
+			<li class="social-media-list-item"><a href="https://www.facebook.com/planobuild" target="blank"><i class="fa fa-facebook" title="Facebook"></i></a></li>
+			<li class="social-media-list-item"><a href="http://twitter.com/planobuild" target="blank"><i class="fa fa-twitter" title="Twitter"></i></a></li>
+			<li class="social-media-list-item"><a href="https://instagram.com/planobuild/" target="blank"><i class="fa fa-instagram" title="Instagram"></i></a></li>
+			<li class="social-media-list-item"><a href="https://www.youtube.com/user/planobuild" target="blank"><i class="fa fa-youtube" title="Youtube"></i></a></li>
+			<li class="social-media-list-item"><a href="https://www.linkedin.com/company/planobuild" target="blank"><i class="fa fa-linkedin" title="Linkedin"></i></a></li>
+			<li class="social-media-list-item"><a href="https://plus.google.com/+planobuild/videos" target="blank"><i class="fa fa-google-plus" title="Google Plus"></i></a></li>
+			<li class="social-media-list-item"><a href="https://www.pinterest.com/planobuild/" target="blank"><i class="fa fa-pinterest" title="Pinterest"></i></a></li>
+		</ul>
+	</nav>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script>
+ $(window).load(function() {
+   $(".btn-nav").on("click tap", function() {
+     $(".side-nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+     $(this).toggleClass("animated");
+   });
+ });
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-36251023-1']);
+		_gaq.push(['_setDomainName', 'jqueryscript.net']);
+		_gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
